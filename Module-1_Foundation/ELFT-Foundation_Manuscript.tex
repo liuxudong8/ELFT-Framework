@@ -68,9 +68,52 @@ F^{\mu\nu} = \begin{pmatrix}
 \]
 This allows us to write the field equations in a compact, covariant form reminiscent of Maxwell's equations.
 
+\section{Coupling to Spacetime Geometry: Towards a Unified Picture}
+\label{sec:gr_coupling}
+
+The ELFT framework, thus far formulated in a flat spacetime background, reveals structures deeply reminiscent of both electromagnetism and relativistic field theory. A natural and profound extension is to inquire how the fields $(\psi, \mathbf{B})$ couple to the dynamics of spacetime itself—the domain of general relativity.
+
+\subsection{The Covariant Lagrangian and the Gravitational Sector}
+To incorporate gravity, we promote the Lagrangian density to a generally covariant form. The central object is the scalar density constructed from the field tensor $F^{\mu\nu}$:
+\begin{equation}
+\mathcal{L}_{\text{grav}} = -\frac{1}{4\mu(r,t)} F^{\mu\nu}F_{\mu\nu} \sqrt{-g},
+\end{equation}
+where $g = \det(g_{\mu\nu})$ is the determinant of the metric tensor, and $\sqrt{-g}\,d^4x$ is the invariant spacetime volume element. The spacetime dependence of $\mu(r,t)$ is now elevated to a functional dependence on the metric and the fundamental fields, $\mu \equiv \mu[g_{\mu\nu}, \psi]$.
+
+\subsection{The Emergent Energy-Momentum Tensor}
+Variation of the action $S = \int \mathcal{L}_{\text{grav}} \, d^4x$ with respect to the metric yields a generalized energy-momentum tensor:
+\begin{equation}
+T_{\mu\nu} = \frac{1}{\mu(r,t)} \left( F_{\mu\alpha}F_{\nu}^{\;\alpha} - \frac{1}{4} g_{\mu\nu} F_{\alpha\beta}F^{\alpha\beta} \right).
+\end{equation}
+This tensor sources the curvature of spacetime via the Einstein field equations, $G_{\mu\nu} = \kappa T_{\mu\nu}$, where $\kappa = 8\pi G/c^4$.
+
+\subsection{A Geometric Interpretation of the Field Invariant}
+The scalar $F^{\alpha\beta}F_{\alpha\beta}$ plays a pivotal role. In our theory, it evaluates to:
+\begin{equation}
+F^{\alpha\beta}F_{\alpha\beta} = 2\left(B^2 - \frac{\psi^2}{c^2}\right) \equiv \lambda_1.
+\end{equation}
+This invariant $\lambda_1$ intertwines the proto-magnetic and scalar fields. In highly symmetric spacetimes (e.g., isotropic, static), this structure can lead to an effective description where the Einstein tensor is proportional to the metric:
+\begin{equation}
+R_{\mu\nu} = \lambda\, g_{\mu\nu},
+\end{equation}
+where $\lambda$ is a scalar function of the fields, $\lambda \propto -\lambda_1 / \mu(r,t)$. This describes an \textit{Einstein manifold}, a spacetime where matter itself dictates a conformal relationship between curvature and metric.
+
+\subsection{Mass as a Dynamic Consequence of Spacetime}
+The core hypothesis of ELFT—that mass originates from the field $\psi$ via $m \propto (\psi/c)^2$—finds its natural completion in this geometric picture. The spacetime-varying permittivity $\varepsilon(r,t)$ and permeability $\mu(r,t)$ are no longer fixed background properties but become dynamic attributes of the metric-$(\psi, \mathbf{B})$ system. Consequently, the mass of an object is not an immutable parameter but a dynamic quantity emerging from its interaction with the local spacetime geometry described by this unified field complex.
+
+This coupling provides a theoretical pathway to address phenomena like the galaxy rotation curve anomaly not by postulating dark matter, but by considering how the large-scale distribution of $\psi$ and $\mathbf{B}$ modifies the effective gravitational potential and mass content through the equations presented above.
+
 \section{Discussion and Outlook}
-The ELFT framework presented here demonstrates that a theory built upon the fields $(\psi, \mathbf{B})$ can naturally reproduce structures central to modern physics. The next crucial steps involve...
-% ... (We will expand this with the connections to GR and the Higgs mechanism in the next iteration)
+The ELFT framework presented here demonstrates that a theory built upon the fields $(\psi, \mathbf{B})$ can naturally reproduce structures central to modern physics. The coupling to spacetime geometry outlined in Section~\ref{sec:gr_coupling} opens promising avenues for addressing long-standing problems in astrophysics and cosmology without resorting to dark matter hypotheses.
+
+Future work will focus on:
+\begin{itemize}
+    \item Deriving explicit solutions for the field equations in symmetric spacetimes.
+    \item Developing the quantum field theoretic formulation of ELFT.
+    \item Confronting the model with high-precision astrophysical data.
+\end{itemize}
+
+The unification of electromagnetic-like fields with gravity through this framework suggests a deeper connection between the fundamental interactions, potentially paving the way toward a complete theory of quantum gravity.
 
 \section*{Acknowledgments}
 This work is dedicated to all who seek light in the darkness and persevere with hope. The journey of this theory is intertwined with the resilience of the human spirit.
