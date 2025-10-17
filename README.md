@@ -14,11 +14,11 @@ This project explores a radical paradigm shift—unifying the description of spa
 
 ## 🧩 Project Modules
 
-This repository is structured into two core modules:
+This repository is structured into three core modules:
 
 - **`Module-1_Foundation/`**: The formal theoretical framework of ELFT.
-- **`Module-2_Application/`** (Coming Soon): Applying ELFT to explain the galaxy rotation curve without dark matter.
-
+- **`Module-2_Application/`** : Applying ELFT to explain the galaxy rotation curve without dark matter.
+- ** About Fundamental Charge and Fine - Structure Constant 3.docx: Conduct relevant theoretical discussions and derivations around fundamental charge and fine - structure constant.
 ## 🚀 Getting Started
 
 Explore the foundation of the theory:
